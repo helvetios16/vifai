@@ -3,12 +3,6 @@
     <div class="max-w-6xl mx-auto p-8">
 
       <header class="text-center my-16">
-        <img 
-          src="https://drive.google.com/uc?export=view&id=1RRpAuIYUGBjlh1YsOJb4HU_q1hIV25h8" 
-          alt="Logo de SortLearn - Algoritmos de Ordenamiento" 
-          class="mx-auto h-24 w-auto mb-6" 
-        />
-
         <h1
           class="text-7xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-linear-to-r from-orange-400 to-red-500">
           SortLearn
