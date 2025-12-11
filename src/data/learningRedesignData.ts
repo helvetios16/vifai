@@ -157,11 +157,12 @@ export const lowFiPrototypes: LowFiPrototype[] = [
 export const userTests: UserTest[] = [
   {
     id: 1,
-    userImgSrc: 'https://placehold.co/400x300/1e293b/94a3b8?text=Usuario+A',
-    userName: 'Usuario A',
+    userImgSrc: '/usuario_a.png',
+    userName: 'Lenin Huayhua',
     description:
-      'El usuario A encontró el flujo principal intuitivo, pero tuvo dificultades para entender la funcionalidad de retroceso.',
-    interviewLink: '#',
+      'El usuario no podia explorar todo, habia opciones que se notaban ahi pero no podia interactuar con ellas.',
+    interviewLink:
+      'https://drive.google.com/drive/folders/1oj7GA2oqlK91Zdpgj2zQBpCBWy4_GBsp?usp=sharing',
   },
   {
     id: 2,
