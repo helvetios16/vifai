@@ -158,7 +158,7 @@ export const userTests: UserTest[] = [
   {
     id: 1,
     userImgSrc: '/usuario_a.png',
-    userName: 'Lenin Huayhua',
+    userName: 'Lenin',
     description:
       'El usuario no podia explorar todo, habia opciones que se notaban ahi pero no podia interactuar con ellas.',
     interviewLink:
@@ -174,11 +174,11 @@ export const userTests: UserTest[] = [
   },
   {
     id: 3,
-    userImgSrc: 'https://placehold.co/400x300/1e293b/94a3b8?text=Usuario+C',
-    userName: 'Usuario C',
+    userImgSrc: '/usuario_c.png',
+    userName: 'Zuka',
     description:
-      'El usuario C intentó editar el código directamente, validando la necesidad de una zona de experimentación interactiva.',
-    interviewLink: '#',
+      'Al usuario en la implementacion considero que podia modificar los caso de entrada para probar mas casos.',
+    interviewLink: 'https://drive.google.com/drive/u/1/folders/1b-9ch-h6QinQerYCm5krpz8YTrGXP8gd',
   },
   {
     id: 4,
