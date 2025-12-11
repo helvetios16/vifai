@@ -51,13 +51,33 @@
           <InterviewsSection :interviews="interviews" />
         </div>
       </div>
+
+      <!-- Low-Fi Prototype Section Slide -->
+      <div class="w-full h-full flex-shrink-0 flex justify-center items-center p-8">
+        <div class="max-w-5xl w-full">
+          <LowFiPrototypeSection :prototypes="lowFiPrototypes" />
+        </div>
+      </div>
+
+      <!-- User Tests Section Slide -->
+      <div class="w-full h-full flex-shrink-0 flex justify-center items-center p-8">
+        <div class="max-w-5xl w-full">
+          <UserTestsSection :tests="userTests" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed } from 'vue'
-import { participants, needs, interviews } from '@/data/learningRedesignData'
+import {
+  participants,
+  needs,
+  interviews,
+  lowFiPrototypes,
+  userTests,
+} from '@/data/learningRedesignData'
 
 // Components
 import PageHeader from '@/components/learning-design/PageHeader.vue'
@@ -66,6 +86,8 @@ import UserResearchSection from '@/components/learning-design/UserResearchSectio
 import KeyFindingsSection from '@/components/learning-design/KeyFindingsSection.vue'
 import NeedsSection from '@/components/learning-design/NeedsSection.vue'
 import InterviewsSection from '@/components/learning-design/InterviewsSection.vue'
+import LowFiPrototypeSection from '@/components/learning-design/LowFiPrototypeSection.vue'
+import UserTestsSection from '@/components/learning-design/UserTestsSection.vue'
 import SlideNav from '@/components/learning-design/SlideNav.vue'
 
 // State
@@ -80,6 +102,8 @@ const sections = [
   { id: 'key-findings', title: 'Hallazgos' },
   { id: 'needs', title: 'Necesidades' },
   { id: 'interviews', title: 'Entrevistas' },
+  { id: 'low-fi-prototype', title: 'Prototipo' },
+  { id: 'user-tests', title: 'Pruebas' },
 ]
 
 // Computed style for sliding effect

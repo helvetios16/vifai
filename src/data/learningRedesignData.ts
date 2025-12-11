@@ -15,6 +15,20 @@ export interface Interview {
   link: string
 }
 
+export interface LowFiPrototype {
+  id: number
+  src: string
+  alt: string
+}
+
+export interface UserTest {
+  id: number
+  userImgSrc: string
+  userName: string
+  description: string
+  interviewLink: string
+}
+
 export const participants: Participant[] = [
   {
     id: 'A',
@@ -114,5 +128,63 @@ export const interviews: Interview[] = [
   {
     user: 'D',
     link: 'https://drive.google.com/file/d/1QhrU-9IXUn_qtmIYLODpYRBS1f1paZIC/view?usp=drive_link',
+  },
+]
+
+export const lowFiPrototypes: LowFiPrototype[] = [
+  {
+    id: 1,
+    src: 'https://placehold.co/600x400/1e293b/94a3b8?text=Boceto+1',
+    alt: 'Boceto del prototipo de baja fidelidad 1',
+  },
+  {
+    id: 2,
+    src: 'https://placehold.co/600x400/1e293b/94a3b8?text=Boceto+2',
+    alt: 'Boceto del prototipo de baja fidelidad 2',
+  },
+  {
+    id: 3,
+    src: 'https://placehold.co/600x400/1e293b/94a3b8?text=Boceto+3',
+    alt: 'Boceto del prototipo de baja fidelidad 3',
+  },
+  {
+    id: 4,
+    src: 'https://placehold.co/600x400/1e293b/94a3b8?text=Boceto+4',
+    alt: 'Boceto del prototipo de baja fidelidad 4',
+  },
+]
+
+export const userTests: UserTest[] = [
+  {
+    id: 1,
+    userImgSrc: 'https://placehold.co/400x300/1e293b/94a3b8?text=Usuario+A',
+    userName: 'Usuario A',
+    description:
+      'El usuario A encontró el flujo principal intuitivo, pero tuvo dificultades para entender la funcionalidad de retroceso.',
+    interviewLink: '#',
+  },
+  {
+    id: 2,
+    userImgSrc: 'https://placehold.co/400x300/1e293b/94a3b8?text=Usuario+B',
+    userName: 'Usuario B',
+    description:
+      'La visualización del call stack fue el punto más valorado por el usuario B, considerándola "muy clarificadora".',
+    interviewLink: '#',
+  },
+  {
+    id: 3,
+    userImgSrc: 'https://placehold.co/400x300/1e293b/94a3b8?text=Usuario+C',
+    userName: 'Usuario C',
+    description:
+      'El usuario C intentó editar el código directamente, validando la necesidad de una zona de experimentación interactiva.',
+    interviewLink: '#',
+  },
+  {
+    id: 4,
+    userImgSrc: 'https://placehold.co/400x300/1e293b/94a3b8?text=Usuario+D',
+    userName: 'Usuario D',
+    description:
+      'Se detectó que el usuario D no comprendió la diferencia entre Merge Sort y Quick Sort hasta usar la herramienta.',
+    interviewLink: '#',
   },
 ]
