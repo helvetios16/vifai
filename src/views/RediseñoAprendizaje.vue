@@ -5,7 +5,7 @@
       <header class="text-center my-16">
         <h1
           class="text-7xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-linear-to-r from-orange-400 to-red-500">
-          SortVIS
+          SortLearn
         </h1>
         <p class="mt-4 text-2xl text-gray-400">Rediseño del Aprendizaje de Algoritmos de Ordenamiento</p>
       </header>
@@ -107,13 +107,14 @@
           </div>
         </section>
 
+        <!--
         <footer class="text-center my-16 py-12 bg-gray-800/30 rounded-2xl border border-gray-700/60">
           <p class="text-3xl text-orange-400 font-bold">Conclusión</p>
           <p class="text-xl text-gray-300 mt-4 max-w-3xl mx-auto">
             La herramienta debe ser un <strong class="text-orange-300">asistente visual</strong> que ilumine los
             procesos abstractos, permitiendo al estudiante experimentar y construir un modelo mental sólido y sin miedo.
           </p>
-        </footer>
+        </footer> -->
 
       </main>
     </div>
@@ -156,7 +157,7 @@ const interviews = [
   { user: 'A', link: 'https://drive.google.com/file/d/1PbS-Kfx3yotUwupkS18m1GR8L-rpPipN/view?usp=sharing' },
   { user: 'B', link: 'https://drive.google.com/file/d/18VA8mWIXK9e8A2vkROYiqmsAjD9y0g_L/view?usp=sharing' },
   { user: 'C', link: 'https://drive.google.com/drive/folders/1HeUkFPXMJ8dusMQJm6LxpGRT_mkMXC-T?usp=sharing' }, // No link provided for user C
-  { user: 'D', link: 'https://drive.google.com/drive/folders/1HeUkFPXMJ8dusMQJm6LxpGRT_mkMXC-T?usp=sharing' },
+  { user: 'D', link: 'https://drive.google.com/file/d/1QhrU-9IXUn_qtmIYLODpYRBS1f1paZIC/view?usp=drive_link' },
 ];
 
 </script>
