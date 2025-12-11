@@ -1,5 +1,8 @@
 <template>
   <div class="bg-gray-900 text-white font-sans h-screen overflow-hidden">
+    <!-- Image Modal -->
+    <ImageModal :src="activeModalImageSrc" @close="closeImageModal" />
+
     <!-- Dot Navigation -->
     <SlideNav
       :sections="sections"
@@ -55,7 +58,7 @@
       <!-- Low-Fi Prototype Section Slide -->
       <div class="w-full h-full flex-shrink-0 flex justify-center items-center p-8">
         <div class="max-w-5xl w-full">
-          <LowFiPrototypeSection :prototypes="lowFiPrototypes" />
+          <LowFiPrototypeSection :prototypes="lowFiPrototypes" @image-clicked="openImageModal" />
         </div>
       </div>
 
@@ -89,10 +92,12 @@ import InterviewsSection from '@/components/learning-design/InterviewsSection.vu
 import LowFiPrototypeSection from '@/components/learning-design/LowFiPrototypeSection.vue'
 import UserTestsSection from '@/components/learning-design/UserTestsSection.vue'
 import SlideNav from '@/components/learning-design/SlideNav.vue'
+import ImageModal from '@/components/learning-design/ImageModal.vue'
 
 // State
 const currentSectionIndex = ref(0)
 let isThrottled = false
+const activeModalImageSrc = ref<string | null>(null)
 
 // Sections Definition for Nav
 const sections = [
@@ -105,6 +110,14 @@ const sections = [
   { id: 'low-fi-prototype', title: 'Prototipo' },
   { id: 'user-tests', title: 'Pruebas' },
 ]
+
+// Modal Functions
+function openImageModal(src: string) {
+  activeModalImageSrc.value = src
+}
+function closeImageModal() {
+  activeModalImageSrc.value = null
+}
 
 // Computed style for sliding effect
 const slidesContainerStyle = computed(() => ({
@@ -119,7 +132,7 @@ function goToSection(index: number) {
 }
 
 function handleWheel(event: WheelEvent) {
-  if (isThrottled) return
+  if (isThrottled || activeModalImageSrc.value) return // Disable scroll when modal is open
   isThrottled = true
   setTimeout(() => {
     isThrottled = false
@@ -135,7 +148,12 @@ function handleWheel(event: WheelEvent) {
 }
 
 function handleKeydown(event: KeyboardEvent) {
-  if (isThrottled) return
+  if (event.key === 'Escape' && activeModalImageSrc.value) {
+    closeImageModal()
+    return
+  }
+  if (isThrottled || activeModalImageSrc.value) return // Disable keys when modal is open
+
   isThrottled = true
   setTimeout(() => {
     isThrottled = false

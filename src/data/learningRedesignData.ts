@@ -134,22 +134,22 @@ export const interviews: Interview[] = [
 export const lowFiPrototypes: LowFiPrototype[] = [
   {
     id: 1,
-    src: 'https://placehold.co/600x400/1e293b/94a3b8?text=Boceto+1',
+    src: '/fidelidad_1.png',
     alt: 'Boceto del prototipo de baja fidelidad 1',
   },
   {
     id: 2,
-    src: 'https://placehold.co/600x400/1e293b/94a3b8?text=Boceto+2',
+    src: '/fidelidad_2.png',
     alt: 'Boceto del prototipo de baja fidelidad 2',
   },
   {
     id: 3,
-    src: 'https://placehold.co/600x400/1e293b/94a3b8?text=Boceto+3',
+    src: '/fidelidad_3.png',
     alt: 'Boceto del prototipo de baja fidelidad 3',
   },
   {
     id: 4,
-    src: 'https://placehold.co/600x400/1e293b/94a3b8?text=Boceto+4',
+    src: '/fidelidad_4.png',
     alt: 'Boceto del prototipo de baja fidelidad 4',
   },
 ]
