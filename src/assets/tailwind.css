@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .before-enter {
   opacity: 0;
   transform: translateY(100px);
