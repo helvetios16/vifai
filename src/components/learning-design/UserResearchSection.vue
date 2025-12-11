@@ -2,14 +2,18 @@
   <section id="user-research" class="my-24">
     <h2 class="text-4xl font-bold text-orange-400 mb-12 text-center">Investigación de Usuarios</h2>
     <div class="grid md:grid-cols-2 gap-12">
-      <div class="bg-gray-800/50 p-8 rounded-lg">
+      <div
+        class="bg-gray-800/50 p-8 rounded-lg transition-transform duration-300 hover:scale-105 hover:bg-gray-800/80"
+      >
         <h3 class="text-2xl font-bold text-amber-300 mb-4 text-center">Usuarios Objetivo</h3>
         <p class="text-gray-400 text-center">
           Estudiantes universitarios de carreras de computación, ingeniería de software o afines,
           que se encuentren cursando cursos como Estructuras de Datos y Algoritmos.
         </p>
       </div>
-      <div class="bg-gray-800/50 p-8 rounded-lg">
+      <div
+        class="bg-gray-800/50 p-8 rounded-lg transition-transform duration-300 hover:scale-105 hover:bg-gray-800/80"
+      >
         <h3 class="text-2xl font-bold text-amber-300 mb-4 text-center">Experiencia</h3>
         <p class="text-gray-400 text-center">Como aprenden Algoritmos de Ordenamiento</p>
       </div>
@@ -20,7 +24,7 @@
         <div
           v-for="participant in participants"
           :key="participant.id"
-          class="bg-gray-800/50 p-6 rounded-lg"
+          class="bg-gray-800/50 p-6 rounded-lg transition-transform duration-300 hover:scale-105 hover:bg-gray-800/80"
         >
           <h4 class="text-xl font-bold text-red-400">{{ participant.id }}</h4>
           <p class="text-gray-400">{{ participant.description }}</p>

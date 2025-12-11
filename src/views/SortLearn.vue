@@ -1,14 +1,14 @@
 <template>
   <div class="bg-gray-900 text-white min-h-screen font-sans">
     <div class="max-w-6xl mx-auto p-8">
-      <PageHeader />
+      <PageHeader v-scroll-animation />
 
       <main>
-        <TeamSection />
-        <UserResearchSection :participants="participants" />
-        <KeyFindingsSection />
-        <NeedsSection :needs="needs" />
-        <InterviewsSection :interviews="interviews" />
+        <TeamSection v-scroll-animation />
+        <UserResearchSection :participants="participants" v-scroll-animation />
+        <KeyFindingsSection v-scroll-animation />
+        <NeedsSection :needs="needs" v-scroll-animation />
+        <InterviewsSection :interviews="interviews" v-scroll-animation />
       </main>
     </div>
   </div>
