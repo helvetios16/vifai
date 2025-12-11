@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import RediseñoAprendizaje from '../views/RediseñoAprendizaje.vue'
+import SortLearn from '../views/SortLearn.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,7 +8,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: RediseñoAprendizaje,
+      component: SortLearn,
     },
   ],
 })
