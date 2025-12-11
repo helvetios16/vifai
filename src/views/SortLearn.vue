@@ -8,7 +8,6 @@
         <UserResearchSection :participants="participants" />
         <KeyFindingsSection />
         <NeedsSection :needs="needs" />
-        <InsightsSection :insights="insights" />
         <InterviewsSection :interviews="interviews" />
       </main>
     </div>
@@ -16,14 +15,13 @@
 </template>
 
 <script setup lang="ts">
-import { participants, needs, insights, interviews } from '@/data/learningRedesignData'
+import { participants, needs, interviews } from '@/data/learningRedesignData'
 
 import PageHeader from '@/components/learning-design/PageHeader.vue'
 import TeamSection from '@/components/learning-design/TeamSection.vue'
 import UserResearchSection from '@/components/learning-design/UserResearchSection.vue'
 import KeyFindingsSection from '@/components/learning-design/KeyFindingsSection.vue'
 import NeedsSection from '@/components/learning-design/NeedsSection.vue'
-import InsightsSection from '@/components/learning-design/InsightsSection.vue'
 import InterviewsSection from '@/components/learning-design/InterviewsSection.vue'
 </script>
 

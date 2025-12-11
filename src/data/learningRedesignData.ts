@@ -98,18 +98,6 @@ export const needs: Need[] = [
   },
 ]
 
-export const insights: string[] = [
-  '“Visualización” como primer recurso de aprendizaje → De B y C: prefieren representaciones gráficas y videos antes que texto o código.',
-  '“Recursión” como punto de confusión crítica → De A y C: la recursión les resulta confusa sin ver el call stack o el flujo de llamadas.',
-  'Necesidad de “interacción paso a paso” → De A y C: necesitan avanzar y retroceder entre pasos del algoritmo para entender los cambios.',
-  '“Código editable” para experimentar y aprender del error → De C: modifica el código para entender cómo cambian los resultados; quiere feedback inmediato.',
-  'Nivel de Experiencia Determina Estrategia de Aprendizaje ->',
-  '“Conexión entre código y visualización” simultánea → De B y C: requieren ver el código y la representación visual al mismo tiempo para comprender el flujo.',
-  '“Comprensión de complejidad” como reto posterior al aprendizaje básico → De B: considera la eficiencia y complejidad esenciales para entender el valor del algoritmo.',
-  '“Apoyo textual o asistido por IA” para aclarar dudas → De D: considera útiles los LLMs (como ChatGPT) para resolver preguntas específicas o reforzar conceptos.',
-  '“Aprendizaje activo” mediante práctica y experimentación → De D: usar ejemplos o materiales físicos refuerza la comprensión; de C: escribir y probar código propio.',
-]
-
 export const interviews: Interview[] = [
   {
     user: 'A',
