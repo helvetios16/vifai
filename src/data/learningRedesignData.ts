@@ -166,11 +166,11 @@ export const userTests: UserTest[] = [
   },
   {
     id: 2,
-    userImgSrc: 'https://placehold.co/400x300/1e293b/94a3b8?text=Usuario+B',
-    userName: 'Usuario B',
+    userImgSrc: '/usuario_b.jpeg',
+    userName: 'Jesus',
     description:
-      'La visualización del call stack fue el punto más valorado por el usuario B, considerándola "muy clarificadora".',
-    interviewLink: '#',
+      'Al usuario le costo comprender inicialmente el flujo principal, aunque luego lo capto por completo. Le gusto el feedback inmediato dado que le parece simple y claro.',
+    interviewLink: 'https://drive.google.com/drive/u/1/folders/10Fjcy2F0-ZjzAXY_sFEIWmXA9hTa4Fjo',
   },
   {
     id: 3,
@@ -182,10 +182,10 @@ export const userTests: UserTest[] = [
   },
   {
     id: 4,
-    userImgSrc: 'https://placehold.co/400x300/1e293b/94a3b8?text=Usuario+D',
-    userName: 'Usuario D',
+    userImgSrc: '/usuario_d.jpeg',
+    userName: 'Kenin',
     description:
-      'Se detectó que el usuario D no comprendió la diferencia entre Merge Sort y Quick Sort hasta usar la herramienta.',
-    interviewLink: '#',
+      'El usuario preferiria tener tips en el momento de codificar y no buscar en otro lado.',
+    interviewLink: 'https://drive.google.com/drive/u/1/folders/1KAYijNQ2IykK8AQy1LKrfZBBRfHJA7U9',
   },
 ]
