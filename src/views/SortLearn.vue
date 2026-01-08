@@ -68,6 +68,13 @@
           <UserTestsSection :tests="userTests" />
         </div>
       </div>
+
+      <!-- High-Fi Interviews Section Slide -->
+      <div class="w-full h-full flex-shrink-0 flex justify-center items-center p-8">
+        <div class="max-w-5xl w-full">
+          <HighFiInterviewsSection :interviews="highFiInterviews" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -80,6 +87,7 @@ import {
   interviews,
   lowFiPrototypes,
   userTests,
+  highFiInterviews,
 } from '@/data/learningRedesignData'
 
 // Components
@@ -91,6 +99,7 @@ import NeedsSection from '@/components/learning-design/NeedsSection.vue'
 import InterviewsSection from '@/components/learning-design/InterviewsSection.vue'
 import LowFiPrototypeSection from '@/components/learning-design/LowFiPrototypeSection.vue'
 import UserTestsSection from '@/components/learning-design/UserTestsSection.vue'
+import HighFiInterviewsSection from '@/components/learning-design/HighFiInterviewsSection.vue'
 import SlideNav from '@/components/learning-design/SlideNav.vue'
 import ImageModal from '@/components/learning-design/ImageModal.vue'
 
@@ -109,6 +118,7 @@ const sections = [
   { id: 'interviews', title: 'Entrevistas' },
   { id: 'low-fi-prototype', title: 'Prototipo' },
   { id: 'user-tests', title: 'Pruebas' },
+  { id: 'high-fi-interviews', title: 'Alta Fidelidad' },
 ]
 
 // Modal Functions

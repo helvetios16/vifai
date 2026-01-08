@@ -154,6 +154,12 @@ export const lowFiPrototypes: LowFiPrototype[] = [
   },
 ]
 
+export interface HighFiInterview {
+  user: string
+  link: string
+  pending?: boolean
+}
+
 export const userTests: UserTest[] = [
   {
     id: 1,
@@ -187,5 +193,25 @@ export const userTests: UserTest[] = [
     description:
       'El usuario preferiria tener tips en el momento de codificar y no buscar en otro lado.',
     interviewLink: 'https://drive.google.com/drive/u/1/folders/1KAYijNQ2IykK8AQy1LKrfZBBRfHJA7U9',
+  },
+]
+
+export const highFiInterviews: HighFiInterview[] = [
+  {
+    user: 'Fernande',
+    link: 'https://drive.google.com/drive/folders/1-nG8vMt6WIrYjzciusnOySVfETwvzhqK',
+  },
+  {
+    user: 'Alex',
+    link: 'https://drive.google.com/file/d/1j__Cbe9WMjQbGcWIbCUJpLC2OD7ZTV73/view?usp=drive_link',
+  },
+  {
+    user: 'Jose',
+    link: 'https://drive.google.com/file/d/1Y4S--rLnyt2uZwgZAb0z30CMNkHsLBef/view?usp=drive_link',
+  },
+  {
+    user: 'Lorenzo',
+    link: 'https://drive.google.com/file/d/15uQE9ahoUD8uf4YQFMQSzS-xVViJvfUe/view?usp=drive_link',
+    pending: true,
   },
 ]
