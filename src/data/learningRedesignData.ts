@@ -212,6 +212,5 @@ export const highFiInterviews: HighFiInterview[] = [
   {
     user: 'Lorenzo',
     link: 'https://drive.google.com/file/d/15uQE9ahoUD8uf4YQFMQSzS-xVViJvfUe/view?usp=drive_link',
-    pending: true,
   },
 ]
