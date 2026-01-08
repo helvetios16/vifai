@@ -215,7 +215,7 @@ export const highFiInterviews: HighFiInterview[] = [
   },
   {
     user: 'Lorenzo',
-    link: 'https://drive.google.com/file/d/15uQE9ahoUD8uf4YQFMQSzS-xVViJvfUe/view?usp=drive_link',
+    link: 'https://drive.google.com/file/d/1I506QBJaoRNf1ytuPlA_tm7RjS5fD1Ht/view?usp=drive_link',
     interviewer: 'Jose Machaca',
   },
 ]
