@@ -1,7 +1,9 @@
 <template>
-  <section id="team" class="my-24">
-    <h2 class="text-4xl font-bold text-orange-400 mb-12 text-center">Integrantes</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+  <section id="team" class="my-16 sm:my-20 md:my-24 px-4">
+    <h2 class="text-3xl sm:text-4xl font-bold text-orange-400 mb-8 sm:mb-10 md:mb-12 text-center">
+      Integrantes
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-6xl mx-auto">
       <!-- Johan -->
       <div
         class="flex flex-col items-center p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20 hover:scale-105"
