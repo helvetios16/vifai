@@ -17,7 +17,7 @@
     >
       <!-- Welcome/Header Slide -->
       <div class="w-full h-full flex-shrink-0 flex justify-center items-center p-8">
-        <PageHeader />
+        <PageHeader @go-to-high-fi="goToSection(8)" />
       </div>
 
       <!-- Team Section Slide -->
