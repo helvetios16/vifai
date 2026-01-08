@@ -158,6 +158,7 @@ export interface HighFiInterview {
   user: string
   link: string
   pending?: boolean
+  interviewer?: string
 }
 
 export const userTests: UserTest[] = [
@@ -198,19 +199,23 @@ export const userTests: UserTest[] = [
 
 export const highFiInterviews: HighFiInterview[] = [
   {
-    user: 'Fernande',
-    link: 'https://drive.google.com/drive/folders/1-nG8vMt6WIrYjzciusnOySVfETwvzhqK',
+    user: 'Fernando',
+    link: 'https://drive.google.com/file/d/1Nmph6Oxrk_1mZZF1rMh2gxwJM20RLepN/view?usp=drive_link',
+    interviewer: 'Johan Lizarve',
   },
   {
     user: 'Alex',
     link: 'https://drive.google.com/file/d/1j__Cbe9WMjQbGcWIbCUJpLC2OD7ZTV73/view?usp=drive_link',
+    interviewer: 'Sebastian Mendoza',
   },
   {
     user: 'Jose',
     link: 'https://drive.google.com/file/d/1Y4S--rLnyt2uZwgZAb0z30CMNkHsLBef/view?usp=drive_link',
+    interviewer: 'Wilson Ramos',
   },
   {
     user: 'Lorenzo',
     link: 'https://drive.google.com/file/d/15uQE9ahoUD8uf4YQFMQSzS-xVViJvfUe/view?usp=drive_link',
+    interviewer: 'Jose Machaca',
   },
 ]

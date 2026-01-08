@@ -6,24 +6,32 @@
     <p class="text-sm sm:text-base text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto">
       Entrevistas realizadas con usuarios para validar el prototipo de alta fidelidad
     </p>
-    <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
-      <a
-        v-for="interview in interviews"
-        :key="interview.user"
-        :href="interview.link"
-        :target="interview.pending ? '_self' : '_blank'"
-        :class="[
-          'px-5 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-all duration-300 text-sm sm:text-base',
-          interview.pending
-            ? 'bg-gray-700 text-gray-400 cursor-not-allowed opacity-60'
-            : 'bg-orange-500 hover:bg-orange-600 text-white hover:scale-105 hover:shadow-lg',
-        ]"
-        :aria-disabled="interview.pending"
-        @click.prevent="interview.pending ? null : openLink(interview.link)"
-      >
-        Usuario {{ interview.user }}
-        <span v-if="interview.pending" class="ml-2 text-xs">(Pendiente)</span>
-      </a>
+    <div class="flex flex-wrap justify-center gap-8 sm:gap-10">
+      <div v-for="interview in interviews" :key="interview.user" class="flex flex-col items-center">
+        <a
+          :href="interview.link"
+          :target="interview.pending ? '_self' : '_blank'"
+          :class="[
+            'px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold transition-all duration-300 text-base sm:text-lg shadow-md',
+            interview.pending
+              ? 'bg-gray-800 text-gray-500 cursor-not-allowed'
+              : 'bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white hover:scale-105 hover:shadow-xl hover:-translate-y-1',
+          ]"
+          :aria-disabled="interview.pending"
+          @click.prevent="interview.pending ? null : openLink(interview.link)"
+        >
+          Usuario {{ interview.user }}
+          <span v-if="interview.pending" class="ml-2 text-xs font-normal opacity-70"
+            >(Pendiente)</span
+          >
+        </a>
+        <span
+          v-if="interview.interviewer"
+          class="mt-3 text-sm text-gray-400 font-medium tracking-wide"
+        >
+          Entrevistado por <span class="text-orange-300">{{ interview.interviewer }}</span>
+        </span>
+      </div>
     </div>
   </section>
 </template>
